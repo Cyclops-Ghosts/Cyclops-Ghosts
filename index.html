@@ -4,78 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>━⋖Ȼɏȼłøᵽs Ǥħøsŧs⋗━</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #1E1E1E;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #FFF8F8;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .tabs {
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .tab_buttons {
+            width: 18%;
+            margin: 1%;
+            transition: 0.3s;
+        }
+        .tab_buttons img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 5%;
+            transition: transform 0.3s, filter 0.3s;
+        }
+        .tab_buttons:hover img {
+            transform: scale(1.1) rotate(5deg);
+            filter: brightness(1.2);
+        }
+        @keyframes pulse {
+            0% {transform: scale(1);}
+            50% {transform: scale(1.1);}
+            100% {transform: scale(1);}
+        }
+        .tab_buttons:hover {
+            animation: pulse 0.5s infinite;
+        }
+        .discord-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            color: #FFF8F8;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .discord-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .tab_buttons {
+                width: 30%;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .tab_buttons {
+                width: 45%;
+            }
+        }
+    </style>
 </head>
 <body>
-
-
-    <style>
-        
-
-
-        body {background-color: #1E1E1E ;}
-        h1 {color: #FFF8F8 ;}
-        .tabs{
-            width: 5%;
-            padding: 1%;
-            margin: 1% auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-        }
-      .tab_buttons{
-width: 250%;
-height: 40%;
-margin:0 12%;
-transition: 1s ;
-      }
-
-
-.tab_buttons img{
-    display: block;
-    width: auto;
-    border-radius: 5%;
-}
-
-.tab_buttons:hover img{
-    transform: scale(1.1);
-}
-        
-              </style>
-
-
-<div class="tabs">
-
-<div class="tab_buttons">
-    <img src="stuff/home.png">
-
-</div>
-<div class="tab_buttons">
-    <img src="stuff/Discord.png">
-
-</div>
-<div class="tab_buttons">
-    <img src="stuff/who.png">
-
-</div>
-<div class="tab_buttons">
-    <img src="stuff/why.png">
-
-</div>
-<div class="tab_buttons">
-    <img src="stuff/owners.png">
-
-</div>
-
-</div>
-
-    
-
-    
     <h1>cyclops ghosts</h1>
 
+    <div class="tabs">
+        <a href="#home" class="tab_buttons">
+            <img src="stuff/home.png" alt="Home">
+        </a>
+        <a href="https://discord.gg/YeJwxrDM3w" class="tab_buttons">
+            <img src="stuff/Discord.png" alt="Discord">
+        </a>
+        <a href="#who" class="tab_buttons">
+            <img src="stuff/who.png" alt="Who">
+        </a>
+        <a href="#why" class="tab_buttons">
+            <img src="stuff/why.png" alt="Why">
+        </a>
+        <a href="#owners" class="tab_buttons">
+            <img src="stuff/owners.png" alt="Owners">
+        </a>
+    </div>
     
-<a href="https://discord.gg/YeJwxrDM3w">Our Discord</a>
-    
+    <a href="https://discord.gg/YeJwxrDM3w" class="discord-link">Our Discord</a>
 </body>
 </html>
